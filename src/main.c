@@ -8,8 +8,11 @@
 int main(void)
 {
     int r;
+    int a;
 
-    r = _abs(-1);
+    a = 10;
+    r = _abs(a);
+    printf("%d\n", a);
     printf("%d\n", r);
     return (0);
 }
