@@ -1,0 +1,447 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "camera"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"link_directories",
+			"target_link_libraries",
+			"include_directories"
+		],
+		"files" : 
+		[
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 36,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 28,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 57,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 10,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-O2 -g -g"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 4,
+					"path" : "/home/lyx/luckfox-pico/media/rockit/rockit/mpi/example/include"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/lyx/code/xyd_source/include"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/lyx/code/xyd_source/include/opencv4"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/lyx/code/xyd_source/include/rkaiq/uAPI2"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/lyx/code/xyd_source/include/rockchip"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/lyx/code/xyd_source/include/rkaiq"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/lyx/code/xyd_source/include/rkaiq/common"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/lyx/code/xyd_source/include/rkaiq/xcore"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/lyx/code/xyd_source/include/rkaiq/algos"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/lyx/code/xyd_source/include/rkaiq/iq_parser"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/lyx/code/xyd_source/include/rkaiq/iq_parser_v2"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/lyx/code/camera"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/lyx/code/camera/include"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					1
+				],
+				"standard" : "14"
+			},
+			"sourceIndexes" : 
+			[
+				0,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7
+			]
+		},
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-std=c99 -Wall -O0 -g3 -Wall -fmessage-length=0 -g"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 4,
+					"path" : "/home/lyx/luckfox-pico/media/rockit/rockit/mpi/example/include"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/lyx/code/xyd_source/include"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/lyx/code/xyd_source/include/opencv4"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/lyx/code/xyd_source/include/rkaiq/uAPI2"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/lyx/code/xyd_source/include/rockchip"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/lyx/code/xyd_source/include/rkaiq"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/lyx/code/xyd_source/include/rkaiq/common"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/lyx/code/xyd_source/include/rkaiq/xcore"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/lyx/code/xyd_source/include/rkaiq/algos"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/lyx/code/xyd_source/include/rkaiq/iq_parser"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/lyx/code/xyd_source/include/rkaiq/iq_parser_v2"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/lyx/code/camera"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/lyx/code/camera/include"
+				}
+			],
+			"language" : "C",
+			"sourceIndexes" : 
+			[
+				1
+			]
+		}
+	],
+	"id" : "camera::@6890427a1f51a3e7e1df",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-O2 -g -g",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/lyx/code/xyd_source/lib",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/lyx/code/camera",
+				"role" : "libraryPath"
+			},
+			{
+				"fragment" : "-Wl,-rpath,/home/lyx/code/xyd_source/lib:/home/lyx/code/camera",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-lpthread",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-ldl",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-lrkaiq",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-lrockchip_mpp",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-lrockit",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-lrtsp",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-lrknnmrt",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-lrockit_tiny",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-lsample_comm",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-lrga",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-lrockit_full",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-lrockiva",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-lm",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-lavformat",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-lavcodec",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-lavdevice",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-lavutil",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-lopencv_features2d",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-lopencv_highgui",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-lopencv_imgproc",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-lopencv_photo",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-lopencv_video",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-lopencv_imgproc",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-lopencv_core",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-lopencv_photo",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-lopencv_video",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-lopencv_core",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "camera",
+	"nameOnDisk" : "camera",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/main.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "src/infra/logger.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/app/app_controller.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/driver/isp_driver.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/driver/vi_driver.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/driver/venc_driver.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/core_video_init.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/core/core_video_run.cpp",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "EXECUTABLE"
+}

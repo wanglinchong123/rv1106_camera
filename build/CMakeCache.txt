@@ -141,7 +141,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=Project
+CMAKE_PROJECT_NAME:STATIC=camera
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/home/lyx/luckfox-pico/sysdrv/source/buildroot/buildroot-2023.02.6/output/host/bin/arm-rockchip830-linux-uclibcgnueabihf-ranlib
@@ -206,13 +206,13 @@ CMAKE_STRIP:FILEPATH=/home/lyx/luckfox-pico/sysdrv/source/buildroot/buildroot-20
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
 //Value Computed by CMake
-Project_BINARY_DIR:STATIC=/home/lyx/code/camera/build
+camera_BINARY_DIR:STATIC=/home/lyx/code/camera/build
 
 //Value Computed by CMake
-Project_IS_TOP_LEVEL:STATIC=ON
+camera_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
-Project_SOURCE_DIR:STATIC=/home/lyx/code/camera
+camera_SOURCE_DIR:STATIC=/home/lyx/code/camera
 
 
 ########################

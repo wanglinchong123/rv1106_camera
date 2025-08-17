@@ -1,0 +1,42 @@
+[
+{
+  "directory": "/home/lyx/code/camera/build",
+  "command": "/home/lyx/luckfox-pico/sysdrv/source/buildroot/buildroot-2023.02.6/output/host/bin/arm-rockchip830-linux-uclibcgnueabihf-g++ -I/home/lyx/luckfox-pico/media/rockit/rockit/mpi/example/include -I/home/lyx/code/xyd_source/include -I/home/lyx/code/xyd_source/include/opencv4 -I/home/lyx/code/xyd_source/include/rkaiq/uAPI2 -I/home/lyx/code/xyd_source/include/rockchip -I/home/lyx/code/xyd_source/include/rkaiq -I/home/lyx/code/xyd_source/include/rkaiq/common -I/home/lyx/code/xyd_source/include/rkaiq/xcore -I/home/lyx/code/xyd_source/include/rkaiq/algos -I/home/lyx/code/xyd_source/include/rkaiq/iq_parser -I/home/lyx/code/xyd_source/include/rkaiq/iq_parser_v2 -I/home/lyx/code/camera -I/home/lyx/code/camera/include -O2 -g -g -o CMakeFiles/camera.dir/src/main.cpp.o -c /home/lyx/code/camera/src/main.cpp",
+  "file": "/home/lyx/code/camera/src/main.cpp"
+},
+{
+  "directory": "/home/lyx/code/camera/build",
+  "command": "/home/lyx/luckfox-pico/sysdrv/source/buildroot/buildroot-2023.02.6/output/host/bin/arm-rockchip830-linux-uclibcgnueabihf-gcc -I/home/lyx/luckfox-pico/media/rockit/rockit/mpi/example/include -I/home/lyx/code/xyd_source/include -I/home/lyx/code/xyd_source/include/opencv4 -I/home/lyx/code/xyd_source/include/rkaiq/uAPI2 -I/home/lyx/code/xyd_source/include/rockchip -I/home/lyx/code/xyd_source/include/rkaiq -I/home/lyx/code/xyd_source/include/rkaiq/common -I/home/lyx/code/xyd_source/include/rkaiq/xcore -I/home/lyx/code/xyd_source/include/rkaiq/algos -I/home/lyx/code/xyd_source/include/rkaiq/iq_parser -I/home/lyx/code/xyd_source/include/rkaiq/iq_parser_v2 -I/home/lyx/code/camera -I/home/lyx/code/camera/include -std=c99 -Wall -O0 -g3 -Wall -fmessage-length=0 -g -o CMakeFiles/camera.dir/src/infra/logger.c.o -c /home/lyx/code/camera/src/infra/logger.c",
+  "file": "/home/lyx/code/camera/src/infra/logger.c"
+},
+{
+  "directory": "/home/lyx/code/camera/build",
+  "command": "/home/lyx/luckfox-pico/sysdrv/source/buildroot/buildroot-2023.02.6/output/host/bin/arm-rockchip830-linux-uclibcgnueabihf-g++ -I/home/lyx/luckfox-pico/media/rockit/rockit/mpi/example/include -I/home/lyx/code/xyd_source/include -I/home/lyx/code/xyd_source/include/opencv4 -I/home/lyx/code/xyd_source/include/rkaiq/uAPI2 -I/home/lyx/code/xyd_source/include/rockchip -I/home/lyx/code/xyd_source/include/rkaiq -I/home/lyx/code/xyd_source/include/rkaiq/common -I/home/lyx/code/xyd_source/include/rkaiq/xcore -I/home/lyx/code/xyd_source/include/rkaiq/algos -I/home/lyx/code/xyd_source/include/rkaiq/iq_parser -I/home/lyx/code/xyd_source/include/rkaiq/iq_parser_v2 -I/home/lyx/code/camera -I/home/lyx/code/camera/include -O2 -g -g -o CMakeFiles/camera.dir/src/app/app_controller.cpp.o -c /home/lyx/code/camera/src/app/app_controller.cpp",
+  "file": "/home/lyx/code/camera/src/app/app_controller.cpp"
+},
+{
+  "directory": "/home/lyx/code/camera/build",
+  "command": "/home/lyx/luckfox-pico/sysdrv/source/buildroot/buildroot-2023.02.6/output/host/bin/arm-rockchip830-linux-uclibcgnueabihf-g++ -I/home/lyx/luckfox-pico/media/rockit/rockit/mpi/example/include -I/home/lyx/code/xyd_source/include -I/home/lyx/code/xyd_source/include/opencv4 -I/home/lyx/code/xyd_source/include/rkaiq/uAPI2 -I/home/lyx/code/xyd_source/include/rockchip -I/home/lyx/code/xyd_source/include/rkaiq -I/home/lyx/code/xyd_source/include/rkaiq/common -I/home/lyx/code/xyd_source/include/rkaiq/xcore -I/home/lyx/code/xyd_source/include/rkaiq/algos -I/home/lyx/code/xyd_source/include/rkaiq/iq_parser -I/home/lyx/code/xyd_source/include/rkaiq/iq_parser_v2 -I/home/lyx/code/camera -I/home/lyx/code/camera/include -O2 -g -g -o CMakeFiles/camera.dir/src/driver/isp_driver.cpp.o -c /home/lyx/code/camera/src/driver/isp_driver.cpp",
+  "file": "/home/lyx/code/camera/src/driver/isp_driver.cpp"
+},
+{
+  "directory": "/home/lyx/code/camera/build",
+  "command": "/home/lyx/luckfox-pico/sysdrv/source/buildroot/buildroot-2023.02.6/output/host/bin/arm-rockchip830-linux-uclibcgnueabihf-g++ -I/home/lyx/luckfox-pico/media/rockit/rockit/mpi/example/include -I/home/lyx/code/xyd_source/include -I/home/lyx/code/xyd_source/include/opencv4 -I/home/lyx/code/xyd_source/include/rkaiq/uAPI2 -I/home/lyx/code/xyd_source/include/rockchip -I/home/lyx/code/xyd_source/include/rkaiq -I/home/lyx/code/xyd_source/include/rkaiq/common -I/home/lyx/code/xyd_source/include/rkaiq/xcore -I/home/lyx/code/xyd_source/include/rkaiq/algos -I/home/lyx/code/xyd_source/include/rkaiq/iq_parser -I/home/lyx/code/xyd_source/include/rkaiq/iq_parser_v2 -I/home/lyx/code/camera -I/home/lyx/code/camera/include -O2 -g -g -o CMakeFiles/camera.dir/src/driver/vi_driver.cpp.o -c /home/lyx/code/camera/src/driver/vi_driver.cpp",
+  "file": "/home/lyx/code/camera/src/driver/vi_driver.cpp"
+},
+{
+  "directory": "/home/lyx/code/camera/build",
+  "command": "/home/lyx/luckfox-pico/sysdrv/source/buildroot/buildroot-2023.02.6/output/host/bin/arm-rockchip830-linux-uclibcgnueabihf-g++ -I/home/lyx/luckfox-pico/media/rockit/rockit/mpi/example/include -I/home/lyx/code/xyd_source/include -I/home/lyx/code/xyd_source/include/opencv4 -I/home/lyx/code/xyd_source/include/rkaiq/uAPI2 -I/home/lyx/code/xyd_source/include/rockchip -I/home/lyx/code/xyd_source/include/rkaiq -I/home/lyx/code/xyd_source/include/rkaiq/common -I/home/lyx/code/xyd_source/include/rkaiq/xcore -I/home/lyx/code/xyd_source/include/rkaiq/algos -I/home/lyx/code/xyd_source/include/rkaiq/iq_parser -I/home/lyx/code/xyd_source/include/rkaiq/iq_parser_v2 -I/home/lyx/code/camera -I/home/lyx/code/camera/include -O2 -g -g -o CMakeFiles/camera.dir/src/driver/venc_driver.cpp.o -c /home/lyx/code/camera/src/driver/venc_driver.cpp",
+  "file": "/home/lyx/code/camera/src/driver/venc_driver.cpp"
+},
+{
+  "directory": "/home/lyx/code/camera/build",
+  "command": "/home/lyx/luckfox-pico/sysdrv/source/buildroot/buildroot-2023.02.6/output/host/bin/arm-rockchip830-linux-uclibcgnueabihf-g++ -I/home/lyx/luckfox-pico/media/rockit/rockit/mpi/example/include -I/home/lyx/code/xyd_source/include -I/home/lyx/code/xyd_source/include/opencv4 -I/home/lyx/code/xyd_source/include/rkaiq/uAPI2 -I/home/lyx/code/xyd_source/include/rockchip -I/home/lyx/code/xyd_source/include/rkaiq -I/home/lyx/code/xyd_source/include/rkaiq/common -I/home/lyx/code/xyd_source/include/rkaiq/xcore -I/home/lyx/code/xyd_source/include/rkaiq/algos -I/home/lyx/code/xyd_source/include/rkaiq/iq_parser -I/home/lyx/code/xyd_source/include/rkaiq/iq_parser_v2 -I/home/lyx/code/camera -I/home/lyx/code/camera/include -O2 -g -g -o CMakeFiles/camera.dir/src/core/core_video_init.cpp.o -c /home/lyx/code/camera/src/core/core_video_init.cpp",
+  "file": "/home/lyx/code/camera/src/core/core_video_init.cpp"
+},
+{
+  "directory": "/home/lyx/code/camera/build",
+  "command": "/home/lyx/luckfox-pico/sysdrv/source/buildroot/buildroot-2023.02.6/output/host/bin/arm-rockchip830-linux-uclibcgnueabihf-g++ -I/home/lyx/luckfox-pico/media/rockit/rockit/mpi/example/include -I/home/lyx/code/xyd_source/include -I/home/lyx/code/xyd_source/include/opencv4 -I/home/lyx/code/xyd_source/include/rkaiq/uAPI2 -I/home/lyx/code/xyd_source/include/rockchip -I/home/lyx/code/xyd_source/include/rkaiq -I/home/lyx/code/xyd_source/include/rkaiq/common -I/home/lyx/code/xyd_source/include/rkaiq/xcore -I/home/lyx/code/xyd_source/include/rkaiq/algos -I/home/lyx/code/xyd_source/include/rkaiq/iq_parser -I/home/lyx/code/xyd_source/include/rkaiq/iq_parser_v2 -I/home/lyx/code/camera -I/home/lyx/code/camera/include -O2 -g -g -o CMakeFiles/camera.dir/src/core/core_video_run.cpp.o -c /home/lyx/code/camera/src/core/core_video_run.cpp",
+  "file": "/home/lyx/code/camera/src/core/core_video_run.cpp"
+}
+]

@@ -819,7 +819,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "Project"
+			"value" : "camera"
 		},
 		{
 			"name" : "CMAKE_RANLIB",
@@ -1102,7 +1102,7 @@
 			"value" : "FALSE"
 		},
 		{
-			"name" : "Project_BINARY_DIR",
+			"name" : "camera_BINARY_DIR",
 			"properties" : 
 			[
 				{
@@ -1114,7 +1114,7 @@
 			"value" : "/home/lyx/code/camera/build"
 		},
 		{
-			"name" : "Project_IS_TOP_LEVEL",
+			"name" : "camera_IS_TOP_LEVEL",
 			"properties" : 
 			[
 				{
@@ -1126,7 +1126,7 @@
 			"value" : "ON"
 		},
 		{
-			"name" : "Project_SOURCE_DIR",
+			"name" : "camera_SOURCE_DIR",
 			"properties" : 
 			[
 				{

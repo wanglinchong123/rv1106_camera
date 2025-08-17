@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: Project
+# Project: camera
 # Configurations: Debug
 # =============================================================================
 
@@ -40,6 +40,89 @@ include CMakeFiles/rules.ninja
 # Logical path to working directory; prefix for absolute paths.
 
 cmake_ninja_workdir = /home/lyx/code/camera/build/
+# =============================================================================
+# Object build statements for EXECUTABLE target camera
+
+
+#############################################
+# Order-only phony target for camera
+
+build cmake_object_order_depends_target_camera: phony || CMakeFiles/camera.dir
+
+build CMakeFiles/camera.dir/src/main.cpp.o: CXX_COMPILER__camera_Debug /home/lyx/code/camera/src/main.cpp || cmake_object_order_depends_target_camera
+  DEP_FILE = CMakeFiles/camera.dir/src/main.cpp.o.d
+  FLAGS = -O2 -g -g
+  INCLUDES = -I/home/lyx/luckfox-pico/media/rockit/rockit/mpi/example/include -I/home/lyx/code/xyd_source/include -I/home/lyx/code/xyd_source/include/opencv4 -I/home/lyx/code/xyd_source/include/rkaiq/uAPI2 -I/home/lyx/code/xyd_source/include/rockchip -I/home/lyx/code/xyd_source/include/rkaiq -I/home/lyx/code/xyd_source/include/rkaiq/common -I/home/lyx/code/xyd_source/include/rkaiq/xcore -I/home/lyx/code/xyd_source/include/rkaiq/algos -I/home/lyx/code/xyd_source/include/rkaiq/iq_parser -I/home/lyx/code/xyd_source/include/rkaiq/iq_parser_v2 -I/home/lyx/code/camera -I/home/lyx/code/camera/include
+  OBJECT_DIR = CMakeFiles/camera.dir
+  OBJECT_FILE_DIR = CMakeFiles/camera.dir/src
+
+build CMakeFiles/camera.dir/src/infra/logger.c.o: C_COMPILER__camera_Debug /home/lyx/code/camera/src/infra/logger.c || cmake_object_order_depends_target_camera
+  DEP_FILE = CMakeFiles/camera.dir/src/infra/logger.c.o.d
+  FLAGS = -std=c99 -Wall -O0 -g3 -Wall -fmessage-length=0 -g
+  INCLUDES = -I/home/lyx/luckfox-pico/media/rockit/rockit/mpi/example/include -I/home/lyx/code/xyd_source/include -I/home/lyx/code/xyd_source/include/opencv4 -I/home/lyx/code/xyd_source/include/rkaiq/uAPI2 -I/home/lyx/code/xyd_source/include/rockchip -I/home/lyx/code/xyd_source/include/rkaiq -I/home/lyx/code/xyd_source/include/rkaiq/common -I/home/lyx/code/xyd_source/include/rkaiq/xcore -I/home/lyx/code/xyd_source/include/rkaiq/algos -I/home/lyx/code/xyd_source/include/rkaiq/iq_parser -I/home/lyx/code/xyd_source/include/rkaiq/iq_parser_v2 -I/home/lyx/code/camera -I/home/lyx/code/camera/include
+  OBJECT_DIR = CMakeFiles/camera.dir
+  OBJECT_FILE_DIR = CMakeFiles/camera.dir/src/infra
+
+build CMakeFiles/camera.dir/src/app/app_controller.cpp.o: CXX_COMPILER__camera_Debug /home/lyx/code/camera/src/app/app_controller.cpp || cmake_object_order_depends_target_camera
+  DEP_FILE = CMakeFiles/camera.dir/src/app/app_controller.cpp.o.d
+  FLAGS = -O2 -g -g
+  INCLUDES = -I/home/lyx/luckfox-pico/media/rockit/rockit/mpi/example/include -I/home/lyx/code/xyd_source/include -I/home/lyx/code/xyd_source/include/opencv4 -I/home/lyx/code/xyd_source/include/rkaiq/uAPI2 -I/home/lyx/code/xyd_source/include/rockchip -I/home/lyx/code/xyd_source/include/rkaiq -I/home/lyx/code/xyd_source/include/rkaiq/common -I/home/lyx/code/xyd_source/include/rkaiq/xcore -I/home/lyx/code/xyd_source/include/rkaiq/algos -I/home/lyx/code/xyd_source/include/rkaiq/iq_parser -I/home/lyx/code/xyd_source/include/rkaiq/iq_parser_v2 -I/home/lyx/code/camera -I/home/lyx/code/camera/include
+  OBJECT_DIR = CMakeFiles/camera.dir
+  OBJECT_FILE_DIR = CMakeFiles/camera.dir/src/app
+
+build CMakeFiles/camera.dir/src/driver/isp_driver.cpp.o: CXX_COMPILER__camera_Debug /home/lyx/code/camera/src/driver/isp_driver.cpp || cmake_object_order_depends_target_camera
+  DEP_FILE = CMakeFiles/camera.dir/src/driver/isp_driver.cpp.o.d
+  FLAGS = -O2 -g -g
+  INCLUDES = -I/home/lyx/luckfox-pico/media/rockit/rockit/mpi/example/include -I/home/lyx/code/xyd_source/include -I/home/lyx/code/xyd_source/include/opencv4 -I/home/lyx/code/xyd_source/include/rkaiq/uAPI2 -I/home/lyx/code/xyd_source/include/rockchip -I/home/lyx/code/xyd_source/include/rkaiq -I/home/lyx/code/xyd_source/include/rkaiq/common -I/home/lyx/code/xyd_source/include/rkaiq/xcore -I/home/lyx/code/xyd_source/include/rkaiq/algos -I/home/lyx/code/xyd_source/include/rkaiq/iq_parser -I/home/lyx/code/xyd_source/include/rkaiq/iq_parser_v2 -I/home/lyx/code/camera -I/home/lyx/code/camera/include
+  OBJECT_DIR = CMakeFiles/camera.dir
+  OBJECT_FILE_DIR = CMakeFiles/camera.dir/src/driver
+
+build CMakeFiles/camera.dir/src/driver/vi_driver.cpp.o: CXX_COMPILER__camera_Debug /home/lyx/code/camera/src/driver/vi_driver.cpp || cmake_object_order_depends_target_camera
+  DEP_FILE = CMakeFiles/camera.dir/src/driver/vi_driver.cpp.o.d
+  FLAGS = -O2 -g -g
+  INCLUDES = -I/home/lyx/luckfox-pico/media/rockit/rockit/mpi/example/include -I/home/lyx/code/xyd_source/include -I/home/lyx/code/xyd_source/include/opencv4 -I/home/lyx/code/xyd_source/include/rkaiq/uAPI2 -I/home/lyx/code/xyd_source/include/rockchip -I/home/lyx/code/xyd_source/include/rkaiq -I/home/lyx/code/xyd_source/include/rkaiq/common -I/home/lyx/code/xyd_source/include/rkaiq/xcore -I/home/lyx/code/xyd_source/include/rkaiq/algos -I/home/lyx/code/xyd_source/include/rkaiq/iq_parser -I/home/lyx/code/xyd_source/include/rkaiq/iq_parser_v2 -I/home/lyx/code/camera -I/home/lyx/code/camera/include
+  OBJECT_DIR = CMakeFiles/camera.dir
+  OBJECT_FILE_DIR = CMakeFiles/camera.dir/src/driver
+
+build CMakeFiles/camera.dir/src/driver/venc_driver.cpp.o: CXX_COMPILER__camera_Debug /home/lyx/code/camera/src/driver/venc_driver.cpp || cmake_object_order_depends_target_camera
+  DEP_FILE = CMakeFiles/camera.dir/src/driver/venc_driver.cpp.o.d
+  FLAGS = -O2 -g -g
+  INCLUDES = -I/home/lyx/luckfox-pico/media/rockit/rockit/mpi/example/include -I/home/lyx/code/xyd_source/include -I/home/lyx/code/xyd_source/include/opencv4 -I/home/lyx/code/xyd_source/include/rkaiq/uAPI2 -I/home/lyx/code/xyd_source/include/rockchip -I/home/lyx/code/xyd_source/include/rkaiq -I/home/lyx/code/xyd_source/include/rkaiq/common -I/home/lyx/code/xyd_source/include/rkaiq/xcore -I/home/lyx/code/xyd_source/include/rkaiq/algos -I/home/lyx/code/xyd_source/include/rkaiq/iq_parser -I/home/lyx/code/xyd_source/include/rkaiq/iq_parser_v2 -I/home/lyx/code/camera -I/home/lyx/code/camera/include
+  OBJECT_DIR = CMakeFiles/camera.dir
+  OBJECT_FILE_DIR = CMakeFiles/camera.dir/src/driver
+
+build CMakeFiles/camera.dir/src/core/core_video_init.cpp.o: CXX_COMPILER__camera_Debug /home/lyx/code/camera/src/core/core_video_init.cpp || cmake_object_order_depends_target_camera
+  DEP_FILE = CMakeFiles/camera.dir/src/core/core_video_init.cpp.o.d
+  FLAGS = -O2 -g -g
+  INCLUDES = -I/home/lyx/luckfox-pico/media/rockit/rockit/mpi/example/include -I/home/lyx/code/xyd_source/include -I/home/lyx/code/xyd_source/include/opencv4 -I/home/lyx/code/xyd_source/include/rkaiq/uAPI2 -I/home/lyx/code/xyd_source/include/rockchip -I/home/lyx/code/xyd_source/include/rkaiq -I/home/lyx/code/xyd_source/include/rkaiq/common -I/home/lyx/code/xyd_source/include/rkaiq/xcore -I/home/lyx/code/xyd_source/include/rkaiq/algos -I/home/lyx/code/xyd_source/include/rkaiq/iq_parser -I/home/lyx/code/xyd_source/include/rkaiq/iq_parser_v2 -I/home/lyx/code/camera -I/home/lyx/code/camera/include
+  OBJECT_DIR = CMakeFiles/camera.dir
+  OBJECT_FILE_DIR = CMakeFiles/camera.dir/src/core
+
+build CMakeFiles/camera.dir/src/core/core_video_run.cpp.o: CXX_COMPILER__camera_Debug /home/lyx/code/camera/src/core/core_video_run.cpp || cmake_object_order_depends_target_camera
+  DEP_FILE = CMakeFiles/camera.dir/src/core/core_video_run.cpp.o.d
+  FLAGS = -O2 -g -g
+  INCLUDES = -I/home/lyx/luckfox-pico/media/rockit/rockit/mpi/example/include -I/home/lyx/code/xyd_source/include -I/home/lyx/code/xyd_source/include/opencv4 -I/home/lyx/code/xyd_source/include/rkaiq/uAPI2 -I/home/lyx/code/xyd_source/include/rockchip -I/home/lyx/code/xyd_source/include/rkaiq -I/home/lyx/code/xyd_source/include/rkaiq/common -I/home/lyx/code/xyd_source/include/rkaiq/xcore -I/home/lyx/code/xyd_source/include/rkaiq/algos -I/home/lyx/code/xyd_source/include/rkaiq/iq_parser -I/home/lyx/code/xyd_source/include/rkaiq/iq_parser_v2 -I/home/lyx/code/camera -I/home/lyx/code/camera/include
+  OBJECT_DIR = CMakeFiles/camera.dir
+  OBJECT_FILE_DIR = CMakeFiles/camera.dir/src/core
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target camera
+
+
+#############################################
+# Link the executable camera
+
+build camera: CXX_EXECUTABLE_LINKER__camera_Debug CMakeFiles/camera.dir/src/main.cpp.o CMakeFiles/camera.dir/src/infra/logger.c.o CMakeFiles/camera.dir/src/app/app_controller.cpp.o CMakeFiles/camera.dir/src/driver/isp_driver.cpp.o CMakeFiles/camera.dir/src/driver/vi_driver.cpp.o CMakeFiles/camera.dir/src/driver/venc_driver.cpp.o CMakeFiles/camera.dir/src/core/core_video_init.cpp.o CMakeFiles/camera.dir/src/core/core_video_run.cpp.o
+  FLAGS = -O2 -g -g
+  LINK_LIBRARIES = -Wl,-rpath,/home/lyx/code/xyd_source/lib:/home/lyx/code/camera  -lpthread  -ldl  -lrkaiq  -lrockchip_mpp  -lrockit  -lrtsp  -lrknnmrt  -lrockit_tiny  -lsample_comm  -lrga  -lrockit_full  -lrockiva  -lm  -lavformat  -lavcodec  -lavdevice  -lavutil  -lopencv_features2d  -lopencv_highgui  -lopencv_imgproc  -lopencv_photo  -lopencv_video  -lopencv_imgproc  -lopencv_core  -lopencv_photo  -lopencv_video  -lopencv_core
+  LINK_PATH = -L/home/lyx/code/xyd_source/lib   -L/home/lyx/code/camera
+  OBJECT_DIR = CMakeFiles/camera.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = camera
+  TARGET_PDB = camera.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -74,12 +157,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /home/lyx/code/camera/build
 
-build all: phony
-
-# =============================================================================
-# Unknown Build Time Dependencies.
-# Tell Ninja that they may appear as side effects of build rules
-# otherwise ordered by order-only dependencies.
+build all: phony camera
 
 # =============================================================================
 # Built-in targets

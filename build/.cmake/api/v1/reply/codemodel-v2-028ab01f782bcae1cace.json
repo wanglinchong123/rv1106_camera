@@ -7,8 +7,16 @@
 				{
 					"build" : ".",
 					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.22.1"
+					},
 					"projectIndex" : 0,
-					"source" : "."
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
 				}
 			],
 			"name" : "Debug",
@@ -19,10 +27,23 @@
 					[
 						0
 					],
-					"name" : "Project"
+					"name" : "camera",
+					"targetIndexes" : 
+					[
+						0
+					]
 				}
 			],
-			"targets" : []
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "camera::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-camera-Debug-31048070dc93263b762a.json",
+					"name" : "camera",
+					"projectIndex" : 0
+				}
+			]
 		}
 	],
 	"kind" : "codemodel",
