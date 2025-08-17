@@ -77,5 +77,7 @@ void Init_VenC(void)
     dst.enModId = RK_ID_VENC;
     dst.s32ChnId = 0;
     dst.s32DevId = 0;
-    RK_MPI_SYS_Bind(&src,&dst);//绑定VI到VENC通道--把​VI通道0​​绑定到VENC通道0​​									
+	
+    RK_MPI_SYS_Bind(&src,&dst);//绑定VI到VENC通道--把​VI通道0​​绑定到VENC通道0​
+
 }

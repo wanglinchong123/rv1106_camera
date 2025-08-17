@@ -67,10 +67,12 @@ int vi_init(void)
     viattr.enCompressMode=COMPRESS_MODE_NONE;//编码压缩模式（不压缩）
     viattr.enDynamicRange=DYNAMIC_RANGE_SDR10;//动态范围
     viattr.enPixelFormat = RK_FMT_YUV420SP;//像素格式（NV12）
-    //viattr.stFrameRate={30,1};//帧率
+    viattr.stFrameRate={30,1};//帧率
+
 	//设置ISP相关参数（负责对采集到的原始图像数据进行​​“美颜”和“优化”​​）
     viattr.stIspOpt.enCaptureType=VI_V4L2_CAPTURE_TYPE_VIDEO_CAPTURE;//视频捕获模式
-    viattr.stIspOpt.enMemoryType = VI_V4L2_MEMORY_TYPE_DMABUF;//内存类型：DMA加速（硬件加速）
+    // viattr.stIspOpt.enMemoryType = VI_V4L2_MEMORY_TYPE_DMABUF;//内存类型：DMA加速（硬件加速）
+	viattr.stIspOpt.enMemoryType = VI_V4L2_MEMORY_TYPE_MMAP;//内存类型：DMA加速（硬件加速）
     viattr.stIspOpt.stMaxSize = {1920,1080};//图像采集模块（ISP）所支持的最大分辨率
     viattr.stIspOpt.stWindow = {0,0,1920,1080};//图像采集窗口（坐标0,0）
     viattr.stIspOpt.u32BufCount = 3;//准备3个图像缓冲区，用于存放采集到的图像数据
@@ -79,6 +81,7 @@ int vi_init(void)
     viattr.stSize.u32Height = 1080;
     viattr.stSize.u32Width = 1920;
     viattr.u32Depth = 3;
+
 	//设置VI通道属性
     int ret = RK_MPI_VI_SetChnAttr(0, 0, &viattr);
 	ret |= RK_MPI_VI_EnableChn(0, 0);//使能0号设备的0号通道

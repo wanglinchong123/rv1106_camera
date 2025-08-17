@@ -104,7 +104,7 @@ int vi_init()
     viattr.enCompressMode=COMPRESS_MODE_NONE;//编码压缩模式
     viattr.enDynamicRange=DYNAMIC_RANGE_SDR10;//动态范围
     viattr.enPixelFormat = RK_FMT_YUV420SP;//NV12
-    //viattr.stFrameRate={30,1};//帧率
+    viattr.stFrameRate={30,1};//帧率
     viattr.stIspOpt.enCaptureType=VI_V4L2_CAPTURE_TYPE_VIDEO_CAPTURE;
     viattr.stIspOpt.enMemoryType = VI_V4L2_MEMORY_TYPE_DMABUF;//DMA加速
     viattr.stIspOpt.stMaxSize = {1920,1080};
@@ -254,7 +254,7 @@ int main(int argc,char * argv[])
     viattr.enCompressMode=COMPRESS_MODE_NONE;//编码压缩模式
     viattr.enDynamicRange=DYNAMIC_RANGE_SDR10;//动态范围
     viattr.enPixelFormat = RK_FMT_YUV420SP;//NV12
-    //viattr.stFrameRate={30,1};//帧率
+    viattr.stFrameRate={30,1};//帧率
     viattr.stIspOpt.enCaptureType=VI_V4L2_CAPTURE_TYPE_VIDEO_CAPTURE;
     viattr.stIspOpt.enMemoryType = VI_V4L2_MEMORY_TYPE_DMABUF;//DMA加速
     viattr.stIspOpt.stMaxSize = {1920,1080};

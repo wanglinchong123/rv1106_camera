@@ -6,5 +6,5 @@
 #include "rk_mpi_venc.h"
 #include "rk_mpi_sys.h"
 
-int venc_init();
+int venc_init(int chnId, int width, int height, RK_CODEC_ID_E enType);
 void Init_VenC();
