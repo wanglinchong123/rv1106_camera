@@ -29,11 +29,11 @@ int core_video_run(void)
 	rtsp_session_handle g_rtsp_session;	// RTSP流会话
 	g_rtsplive = create_rtsp_demo(554);	// 554端口
 	g_rtsp_session = rtsp_new_session(g_rtsplive, "/live/test");		// 创建了一个​RTSP会话,路径为/live/test​​
-	rtsp_set_video(g_rtsp_session, RTSP_CODEC_ID_VIDEO_H264, NULL, 0);	// 设置这个RTSP会话的视频编码格式为：H.264
+	rtsp_set_video(g_rtsp_session, RTSP_CODEC_ID_VIDEO_H265, NULL, 0);	// 设置这个RTSP会话的视频编码格式为：H.265
 	rtsp_sync_video_ts(g_rtsp_session, rtsp_get_reltime(), rtsp_get_ntptime()); // 同步视频的时间戳
 
 	VIDEO_FRAME_INFO_S stViFrame;// 从摄像头（VI）获取的原始帧数据
-	VENC_STREAM_S stFrame;		// 从编码器（VENC）获取的编码后数据流（H.264）
+	VENC_STREAM_S stFrame;		// 从编码器（VENC）获取的编码后数据流（H.265）
 	stFrame.pstPack = (VENC_PACK_S *)malloc(sizeof(VENC_PACK_S)); // 为编码器输出的VENC数据包分配内存
 
 	int fps_count = 0;
@@ -43,9 +43,9 @@ int core_video_run(void)
 	int width = 1920;
 	int height = 1080;
 
-	// 定义H.264帧的时间戳变量
-	RK_U64 H264_PTS = 0;
-	RK_U32 H264_TimeRef = 0;
+	// 定义H.265帧的时间戳变量
+	RK_U64 H265_PTS = 0;
+	RK_U32 H265_TimeRef = 0;
 
 	// 创建一个可被硬件访问的DMA内存池，分配一块用于存 BGR 图像的 MB
 	//这块内存会被 OpenCV 直接当作 Mat 的 data 使用
@@ -61,15 +61,15 @@ int core_video_run(void)
 	// Get MB from Pool
 	MB_BLK src_Blk = RK_MPI_MB_GetMB(src_Pool, width * height * 3, RK_TRUE);
 
-	// 初始化一个视频帧信息结构体h264_frame，描述一帧图像
-	VIDEO_FRAME_INFO_S h264_frame;
-	h264_frame.stVFrame.u32Width = width;
-	h264_frame.stVFrame.u32Height = height;
-	h264_frame.stVFrame.u32VirWidth = width;
-	h264_frame.stVFrame.u32VirHeight = height;
-	h264_frame.stVFrame.enPixelFormat = RK_FMT_RGB888; // RGB像素格式
-	h264_frame.stVFrame.u32FrameFlag = 160;
-	h264_frame.stVFrame.pMbBlk = src_Blk;
+	// 初始化一个视频帧信息结构体h265_frame，描述一帧图像
+	VIDEO_FRAME_INFO_S h265_frame;
+	h265_frame.stVFrame.u32Width = width;
+	h265_frame.stVFrame.u32Height = height;
+	h265_frame.stVFrame.u32VirWidth = width;
+	h265_frame.stVFrame.u32VirHeight = height;
+	h265_frame.stVFrame.enPixelFormat = RK_FMT_RGB888; // RGB像素格式
+	h265_frame.stVFrame.u32FrameFlag = 160;
+	h265_frame.stVFrame.pMbBlk = src_Blk;
 
 	// 将 DMA 内存块转换为虚拟地址，用 OpenCV 的 cv::Mat封装，方便做图像处理（比如缩放、绘图等）
 	unsigned char *data = (unsigned char *)RK_MPI_MB_Handle2VirAddr(src_Blk);
@@ -82,8 +82,8 @@ int core_video_run(void)
 	while (!g_exit)
 	{
 		// 每一帧开始时，设置时间戳和参考时间
-		h264_frame.stVFrame.u32TimeRef = H264_TimeRef++;
-		h264_frame.stVFrame.u64PTS = TEST_COMM_GetNowUs();
+		h265_frame.stVFrame.u32TimeRef = H265_TimeRef++;
+		h265_frame.stVFrame.u64PTS = TEST_COMM_GetNowUs();
 
 		RK_U64 nowUs = TEST_COMM_GetNowUs();//获取当前时间
 
@@ -129,8 +129,8 @@ int core_video_run(void)
 		}
 		memcpy(data, frame.data, width * height * 3); // data中已经是​带FPS的BGR图像
 
-		//把上面那块BGR/“声明为RGB888”的帧送给编码器通道（VENC）0--编码为H.264
-		if (RK_MPI_VENC_SendFrame(0, &h264_frame, -1) != 0)
+		//把上面那块BGR/“声明为RGB888”的帧送给编码器通道（VENC）0--编码为H.265
+		if (RK_MPI_VENC_SendFrame(0, &h265_frame, -1) != 0)
 		{
 			printf("RK_MPI_VENC_SendFrame失败\n");
 			continue;

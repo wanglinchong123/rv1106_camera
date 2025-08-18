@@ -44,7 +44,8 @@ int venc_init(int chnId, int width, int height, RK_CODEC_ID_E enType)
 	stAttr.stVencAttr.enPixelFormat = RK_FMT_RGB888;//像素格式
 	
 	if (enType == RK_VIDEO_ID_AVC)
-	stAttr.stVencAttr.u32Profile = H264E_PROFILE_HIGH;//H.264高档次
+	// stAttr.stVencAttr.u32Profile = H264E_PROFILE_HIGH;//H.264高档次
+	stAttr.stVencAttr.u32Profile = H265E_PROFILE_MAIN10;//H.265
 	stAttr.stVencAttr.u32PicWidth = width;
 	stAttr.stVencAttr.u32PicHeight = height;
 	stAttr.stVencAttr.u32VirWidth = width;
@@ -66,8 +67,8 @@ int venc_init(int chnId, int width, int height, RK_CODEC_ID_E enType)
 //初始化VENC（视频编码器）
 void Init_VenC(void)
 {  
-    //配置编码类型为H.264
-	RK_CODEC_ID_E enCodecType = RK_VIDEO_ID_AVC;
+    //配置编码类型为H.265
+	RK_CODEC_ID_E enCodecType = RK_VIDEO_ID_HEVC;
 	venc_init(0, 1920, 1080, enCodecType);
     //配置VENC通道与VI通道的绑定关系
     MPP_CHN_S src;
