@@ -23,9 +23,9 @@ int core_video_init(void)
     printf("初始化 MPI 系统成功！\r\n");
 
     vi_dev_init();
-    printf("初始化VI成功");
+    printf("初始化VI设备成功");
 
-	//3：初始化 VI （视频输入通道）
+	//3：初始化VI通道 （视频输入通道）
     //FRAME_RATE_CTRL_S   stFrameRate = {}; 
     VI_CHN_ATTR_S viattr={0};
     viattr.bFlip=RK_FALSE;//是否翻转

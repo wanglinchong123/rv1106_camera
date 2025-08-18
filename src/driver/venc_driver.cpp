@@ -40,7 +40,9 @@ int venc_init(int chnId, int width, int height, RK_CODEC_ID_E enType)
 	}
 	//设置上面三种视频编码类型通用编码参数
 	stAttr.stVencAttr.enType = enType;
-	stAttr.stVencAttr.enPixelFormat = RK_FMT_YUV420SP;//像素格式
+	// stAttr.stVencAttr.enPixelFormat = RK_FMT_YUV420SP;//像素格式
+	stAttr.stVencAttr.enPixelFormat = RK_FMT_RGB888;//像素格式
+	
 	if (enType == RK_VIDEO_ID_AVC)
 	stAttr.stVencAttr.u32Profile = H264E_PROFILE_HIGH;//H.264高档次
 	stAttr.stVencAttr.u32PicWidth = width;
@@ -78,6 +80,5 @@ void Init_VenC(void)
     dst.s32ChnId = 0;
     dst.s32DevId = 0;
 	
-    RK_MPI_SYS_Bind(&src,&dst);//绑定VI到VENC通道--把​VI通道0​​绑定到VENC通道0​
-
+    //RK_MPI_SYS_Bind(&src,&dst);//绑定VI到VENC通道--把​VI通道0​​绑定到VENC通道0​
 }

@@ -31,7 +31,6 @@
 #include "libavfilter/avfilter.h"
 
 
-
 int main(int argc, char **argv)
 {
     avdevice_register_all();

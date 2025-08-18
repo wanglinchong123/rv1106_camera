@@ -49,7 +49,6 @@ int vi_dev_init(void)
 	} else {
 		printf("RK_MPI_VI_EnableDev already\n");
 	}
-
 	return 0;
 }
 
